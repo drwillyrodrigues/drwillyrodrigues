@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Willy Rodrigues | Cirurgião-Dentista</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- FontAwesome para Ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased selection:bg-cyan-500 selection:text-white">
+
+    <!-- HEADER / NAVBAR -->
+    <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-100 shadow-xs">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
+            <a href="#" class="flex items-center gap-3">
+                <div class="w-9 h-9 rounded-full bg-cyan-600 text-white flex items-center justify-center font-bold text-base shadow-md shadow-cyan-600/20">
+                    WR
+                </div>
+                <div>
+                    <span class="block font-bold text-slate-900 leading-tight text-sm">Dr. Willy Rodrigues</span>
+                    <span class="text-[11px] text-cyan-700 font-medium tracking-wide">CRO 182526-SP</span>
+                </div>
+            </a>
+            
+            <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-600">
+                <a href="#sobre" class="hover:text-cyan-600 transition">Sobre Mim</a>
+                <a href="#tratamentos" class="hover:text-cyan-600 transition">Tratamentos</a>
+                <a href="#localizacao" class="hover:text-cyan-600 transition">Localização</a>
+            </nav>
+
+            <a href="https://wa.me/5511969182101?text=Olá%2C%20Dr.%20Willy.%20Gostaria%20de%20agendar%20uma%20consulta." target="_blank" class="bg-cyan-600 hover:bg-cyan-700 text-white font-medium px-3.5 py-2 rounded-full text-xs transition shadow-md shadow-cyan-600/20 flex items-center gap-2">
+                <i class="fa-brands fa-whatsapp text-sm"></i>
+                <span>Agendar Consulta</span>
+            </a>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="relative overflow-hidden pt-10 pb-14 lg:pt-16 lg:pb-20 bg-gradient-to-b from-cyan-50/50 via-white to-slate-50">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                
+                <!-- Texto Principal -->
+                <div class="lg:col-span-7 text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-100/80 text-cyan-800 text-xs font-semibold mb-4">
+                        <i class="fa-solid fa-tooth"></i> Odontologia Moderna e Humanizada
+                    </div>
+                    <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-900 tracking-tight leading-tight mb-4">
+                        Seu novo sorriso com <span class="text-cyan-600">cuidado, técnica e precisão.</span>
+                    </h1>
+                    <p class="text-base sm:text-lg text-slate-600 mb-6 max-w-xl mx-auto lg:mx-0 font-light">
+                        Atendimento odontológico personalizado em Perdizes, São Paulo. Foco no seu bem-estar, conforto e na excelência de cada procedimento.
+                    </p>
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-3">
+                        <a href="https://wa.me/5511969182101?text=Olá%2C%20Dr.%20Willy.%20Gostaria%20de%20agendar%20uma%20consulta." target="_blank" class="w-full sm:w-auto bg-cyan-600 hover:bg-cyan-700 text-white font-semibold px-6 py-3.5 rounded-xl transition shadow-lg shadow-cyan-600/25 flex items-center justify-center gap-2.5 text-sm">
+                            <i class="fa-brands fa-whatsapp text-lg"></i>
+                            <span>Falar no WhatsApp</span>
+                        </a>
+                        <a href="#tratamentos" class="w-full sm:w-auto bg-white hover:bg-slate-50 text-slate-700 font-medium px-5 py-3.5 rounded-xl border border-slate-200 transition text-sm text-center">
+                            Conhecer Tratamentos
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Foto Oficial do Dr. Willy -->
+                <div class="lg:col-span-5 flex justify-center">
+                    <div class="relative w-full max-w-xs">
+                        <div class="absolute -inset-2 bg-gradient-to-tr from-cyan-600 to-sky-400 rounded-3xl opacity-20 blur-xl"></div>
+                        <div class="relative bg-white p-3 rounded-3xl shadow-xl border border-slate-100">
+                            <div class="h-96 w-full rounded-2xl bg-slate-900 overflow-hidden relative shadow-inner">
+                                <img src="https://i.postimg.cc/ryW9Zm8W/Whats-App-Image-2026-09-30-at-19-50-40.jpg" alt="Dr. Willy Rodrigues" class="w-full h-full object-cover object-top">
+                                <div class="absolute bottom-3 left-1/2 -translate-x-1/2 bg-slate-900/80 backdrop-blur-md px-3.5 py-1 rounded-full text-xs font-medium text-white border border-white/20 whitespace-nowrap shadow-lg">
+                                    CRO 182526-SP
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SOBRE MIM -->
+    <section id="sobre" class="py-12 bg-white border-t border-slate-100">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
+                <div class="md:col-span-5">
+                    <div class="aspect-square rounded-2xl bg-cyan-900 overflow-hidden relative shadow-md flex items-center justify-center text-white max-w-xs mx-auto md:max-w-none">
+                        <div class="absolute inset-0 bg-gradient-to-br from-cyan-600/80 to-slate-900/90 flex flex-col items-center justify-center p-6 text-center">
+                            <i class="fa-solid fa-stethoscope text-4xl mb-3 text-cyan-200"></i>
+                            <span class="font-bold text-lg">Dr. Willy Rodrigues</span>
+                            <span class="text-xs text-cyan-200 mt-1">Compromisso com a saúde e a estética do seu sorriso</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:col-span-7">
+                    <h2 class="text-xs font-bold text-cyan-600 tracking-wider uppercase mb-1">Sobre o Profissional</h2>
+                    <h3 class="text-2xl sm:text-3xl font-bold text-slate-900 mb-4">Excelência, ética e atendimento humanizado</h3>
+                    <p class="text-slate-600 mb-3 leading-relaxed font-light text-xs sm:text-sm">
+                        Me chamo Willy Rodrigues, cirurgião-dentista formado pela FMU em 2026 e fisioterapeuta formado pela UFRJ em 2017. Atualmente, me especializando em Dentística, com ênfase em Estética.
+                    </p>
+                    <p class="text-slate-600 mb-3 leading-relaxed font-light text-xs sm:text-sm">
+                        Acredito na Odontologia além da saúde bucal: mas também como uma forma de transformar sorrisos, resgatar a autoestima e promover o bem-estar. Meu propósito é oferecer um atendimento humanizado, pautado na escuta ativa, no acolhimento e no cuidado individualizado, respeitando as necessidades, as expectativas e a singularidade de cada paciente.
+                    </p>
+                    <p class="text-slate-600 mb-5 leading-relaxed font-light text-xs sm:text-sm">
+                        Busco aliar conhecimento técnico, sensibilidade e atenção aos detalhes para proporcionar uma experiência acolhedora, com tratamentos personalizados e resultados que valorizem a naturalidade e a identidade de cada sorriso.
+                    </p>
+                    <div class="flex items-center gap-6 pt-2 border-t border-slate-100">
+                        <div>
+                            <span class="block text-xl font-bold text-cyan-600">CRO</span>
+                            <span class="text-[11px] text-slate-500">182526-SP</span>
+                        </div>
+                        <div class="h-6 w-px bg-slate-200"></div>
+                        <div>
+                            <span class="block text-xl font-bold text-cyan-600">Perdizes</span>
+                            <span class="text-[11px] text-slate-500">São Paulo - SP</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TRATAMENTOS -->
+    <section id="tratamentos" class="py-12 bg-slate-50">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6">
+            <div class="text-center max-w-2xl mx-auto mb-10">
+                <h2 class="text-xs font-bold text-cyan-600 tracking-wider uppercase mb-1">Especialidades</h2>
+                <h3 class="text-2xl sm:text-3xl font-bold text-slate-900 mb-2">Tratamentos Odontológicos</h3>
+                <p class="text-slate-600 font-light text-sm">Cuidados completos para devolver a saúde, a função e a estética ao seu sorriso.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
+                <!-- Card 1 -->
+                <div class="bg-white p-5 rounded-2xl border border-slate-100 shadow-xs hover:shadow-md transition group">
+                    <div class="w-10 h-10 rounded-xl bg-cyan-50 text-cyan-600 flex items-center justify-center text-lg mb-3 group-hover:bg-cyan-600 group-hover:text-white transition">
+                        <i class="fa-solid fa-tooth"></i>
+                    </div>
+                    <h4 class="font-bold text-slate-900 mb-1.5 text-sm">Prevenção e Limpeza</h4>
+                    <p class="text-xs text-slate-600 font-light leading-relaxed">Profilaxia, remoção de tártaro e orientações completas para manter sua gengiva e dentes saudáveis.</p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-white p-5 rounded-2xl border border-slate-100 shadow-xs hover:shadow-md transition group">
+                    <div class="w-10 h-10 rounded-xl bg-cyan-50 text-cyan-600 flex items-center justify-center text-lg mb-3 group-hover:bg-cyan-600 group-hover:text-white transition">
+                        <i class="fa-solid fa-wand-magic-sparkles"></i>
+                    </div>
+                    <h4 class="font-bold text-slate-900 mb-1.5 text-sm">Clareamento Dental</h4>
+                    <p class="text-xs text-slate-600 font-light leading-relaxed">Técnicas seguras e modernas para clarear seus dentes e devolver o brilho natural ao seu sorriso.</p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-white p-5 rounded-2xl border border-slate-100 shadow-xs hover:shadow-md transition group">
+                    <div class="w-10 h-10 rounded-xl bg-cyan-50 text-cyan-600 flex items-center justify-center text-lg mb-3 group-hover:bg-cyan-600 group-hover:text-white transition">
+                        <i class="fa-solid fa-face-smile"></i>
+                    </div>
+                    <h4 class="font-bold text-slate-900 mb-1.5 text-sm">Estética do Sorriso</h4>
+                    <p class="text-xs text-slate-600 font-light leading-relaxed">Restaurações estéticas, resinas diretas e correções para harmonizar a estética dos seus dentes.</p>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="bg-white p-5 rounded-2xl border border-slate-100 shadow-xs hover:shadow-md transition group">
+                    <div class="w-10 h-10 rounded-xl bg-cyan-50 text-cyan-600 flex items-center justify-center text-lg mb-3 group-hover:bg-cyan-600 group-hover:text-white transition">
+                        <i class="fa-solid fa-hands-holding-child"></i>
+                    </div>
+                    <h4 class="font-bold text-slate-900 mb-1.5 text-sm">Próteses e Reabilitação</h4>
+                    <p class="text-xs text-slate-600 font-light leading-relaxed">Reposição de dentes perdidos com próteses fixas ou removíveis, devolvendo mastigação e autoestima.</p>
+                </div>
+            </div>
+
+            <div class="mt-8 text-center">
+                <a href="https://wa.me/5511969182101?text=Olá%2C%20Dr.%20Willy.%20Gostaria%20de%20saber%20mais%20sobre%20os%20tratamentos." target="_blank" class="inline-flex items-center gap-2 bg-slate-900 hover:bg-slate-800 text-white font-medium px-5 py-2.5 rounded-xl transition text-xs">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    <span>Tire suas dúvidas sobre tratamentos</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- LOCALIZAÇÃO E CONTATO -->
+    <section id="localizacao" class="py-12 bg-white border-t border-slate-100">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6">
+            <div class="text-center max-w-2xl mx-auto mb-10">
+                <h2 class="text-xs font-bold text-cyan-600 tracking-wider uppercase mb-1">Onde Estamos</h2>
+                <h3 class="text-2xl sm:text-3xl font-bold text-slate-900 mb-2">Venha nos Conhecer</h3>
+                <p class="text-slate-600 font-light text-sm">Localização privilegiada e de fácil acesso na zona oeste de São Paulo.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-stretch">
+                <!-- Informações de Endereço -->
+                <div class="bg-slate-50 p-6 sm:p-8 rounded-3xl border border-slate-100 flex flex-col justify-between">
+                    <div>
+                        <h4 class="text-lg font-bold text-slate-900 mb-5">Consultório Perdizes</h4>
+                        
+                        <div class="space-y-3.5">
+                            <div class="flex items-start gap-3.5">
+                                <div class="w-9 h-9 rounded-xl bg-cyan-100 text-cyan-700 flex items-center justify-center shrink-0 mt-0.5">
+                                    <i class="fa-solid fa-location-dot text-sm"></i>
+                                </div>
+                                <div>
+                                    <h5 class="text-[11px] font-bold text-slate-400 uppercase tracking-wider mb-0.5">Endereço</h5>
+                                    <p class="text-slate-800 font-medium text-sm">R. Padre Chico, 221 - Sala 607</p>
+                                    <p class="text-slate-800 font-medium text-sm">Perdizes, São Paulo, 05008-010</p>
+                                    <p class="text-xs text-cyan-700 font-medium mt-0.5">Esquina com a Rua Tucuna</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start gap-3.5">
+                                <div class="w-9 h-9 rounded-xl bg-cyan-100 text-cyan-700 flex items-center justify-center shrink-0 mt-0.5">
+                                    <i class="fa-solid fa-car text-sm"></i>
+                                </div>
+                                <div>
+                                    <h5 class="text-[11px] font-bold text-slate-400 uppercase tracking-wider mb-0.5">Facilidades</h5>
+                                    <p class="text-slate-700 text-xs">Estacionamento no local</p>
+                                    <p class="text-slate-700 text-xs">Próximo ao metrô Barra Funda</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start gap-3.5">
+                                <div class="w-9 h-9 rounded-xl bg-cyan-100 text-cyan-700 flex items-center justify-center shrink-0 mt-0.5">
+                                    <i class="fa-solid fa-envelope text-sm"></i>
+                                </div>
+                                <div>
+                                    <h5 class="text-[11px] font-bold text-slate-400 uppercase tracking-wider mb-0.5">Contato & E-mail</h5>
+                                    <p class="text-slate-800 font-medium text-xs">drwillyrodrigues@gmail.com</p>
+                                    <p class="text-slate-800 font-medium text-xs mt-0.5">(11) 96918-2101</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-6 pt-5 border-t border-slate-200">
+                        <a href="https://wa.me/5511969182101?text=Olá%2C%20Dr.%20Willy.%20Gostaria%20de%20tirar%20dúvidas%20sobre%20a%20localização." target="_blank" class="w-full bg-cyan-600 hover:bg-cyan-700 text-white font-medium py-2.5 px-4 rounded-xl transition text-center block text-xs shadow-md shadow-cyan-600/20">
+                            Abrir no WhatsApp
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Destaque Visual Ajustado -->
+                <div class="bg-cyan-900 rounded-3xl p-6 sm:p-8 text-white flex flex-col justify-center relative overflow-hidden">
+                    <div class="absolute inset-0 bg-gradient-to-tr from-cyan-950 to-cyan-800 opacity-90"></div>
+                    <div class="relative z-10">
+                        <span class="inline-block bg-white/10 px-3 py-1 rounded-full text-[11px] font-semibold text-cyan-200 mb-3">Localização Privilegiada</span>
+                        <h4 class="text-xl font-bold mb-2">Consultório em Perdizes</h4>
+                        <p class="text-cyan-100 text-xs sm:text-sm font-light leading-relaxed mb-5">
+                            Espaço planejado para proporcionar total conforto e discrição, com fácil acesso por transporte público ou automóvel e estacionamento disponível no local.
+                        </p>
+                        <div class="bg-white/10 backdrop-blur-md p-4 rounded-2xl border border-white/10">
+                            <div class="flex items-center gap-2.5 mb-1.5">
+                                <i class="fa-solid fa-calendar-check text-cyan-300 text-sm"></i>
+                                <span class="font-semibold text-xs">Atendimento com Horário Marcado</span>
+                            </div>
+                            <p class="text-[11px] text-cyan-100 font-light">Agende seu horário previamente pelo WhatsApp para uma experiência personalizada e sem esperas.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-slate-900 text-slate-400 py-8 border-t border-slate-800">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 flex flex-col md:flex-row items-center justify-between gap-4 text-center md:text-left">
+            <div>
+                <div class="flex items-center justify-center md:justify-start gap-2.5 mb-1">
+                    <div class="w-7 h-7 rounded-full bg-cyan-600 text-white flex items-center justify-center font-bold text-xs">
+                        WR
+                    </div>
+                    <span class="font-bold text-white text-sm">Dr. Willy Rodrigues</span>
+                </div>
+                <p class="text-[11px] text-slate-500">Cirurgião-Dentista • CRO 182526-SP</p>
+            </div>
+
+            <div class="flex items-center gap-4">
+                <a href="https://www.instagram.com/drwillyrodrigues" target="_blank" class="w-9 h-9 rounded-full bg-slate-800 hover:bg-cyan-600 hover:text-white flex items-center justify-center transition text-slate-300" aria-label="Instagram">
+                    <i class="fa-brands fa-instagram text-base"></i>
+                </a>
+                <a href="https://wa.me/5511969182101" target="_blank" class="w-9 h-9 rounded-full bg-slate-800 hover:bg-cyan-600 hover:text-white flex items-center justify-center transition text-slate-300" aria-label="WhatsApp">
+                    <i class="fa-brands fa-whatsapp text-base"></i>
+                </a>
+            </div>
+
+            <div class="text-[11px] text-slate-500">
+                &copy; 2026 Dr. Willy Rodrigues. Todos os direitos reservados.
+            </div>
+        </div>
+    </footer>
+
+    <!-- BOTÃO FLUTUANTE WHATSAPP -->
+    <a href="https://wa.me/5511969182101?text=Olá%2C%20Dr.%20Willy.%20Gostaria%20de%20agendar%20uma%20consulta." target="_blank" class="fixed bottom-5 right-5 z-50 bg-emerald-500 hover:bg-emerald-600 text-white w-12 h-12 rounded-full shadow-lg shadow-emerald-500/30 flex items-center justify-center text-xl transition hover:scale-110" aria-label="WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+</body>
+</html>
